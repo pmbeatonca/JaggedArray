@@ -1,0 +1,55 @@
+﻿<Window x:Class="JaggedArray.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JaggedArray"
+        mc:Ignorable="d"
+        Title="Assignment8Group1" Height="350" Width="525" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <ListBox Name="lsbSect1" Grid.Row="0" Grid.Column="0" Margin="10" />
+        <ListBox Name="lsbSect2" Grid.Row="0" Grid.Column="1" Margin="10" />
+        <ListBox Name="lsbSect3" Grid.Row="0" Grid.Column="2" Margin="10" />
+        <Label Name="lblavg1" Grid.Row="1" Grid.Column="0" FontSize="10" Grid.ColumnSpan="3"/>
+        <Viewbox Grid.Row="2" Grid.Column="0">
+        <Label Content="AVG All STUDENTS"  Background="Aquamarine" />
+        </Viewbox>
+        <Viewbox Grid.Row="2" Grid.Column="1">
+            <Label Name="lblAvgAll"   Background="Aquamarine" />
+        </Viewbox>
+        <Viewbox Grid.Row="3" Grid.Column="0">
+            <Label Content="HIGHEST SCORE"  Background="Aquamarine" />
+        </Viewbox>
+        <Viewbox Grid.Row="3" Grid.Column="1">
+            <Label Name="lblHighest"   Background="Aquamarine" />
+        </Viewbox>
+        <Viewbox Grid.Row="4" Grid.Column="0">
+            <Label Content="LOWEST SCORE"  Background="Aquamarine" />
+        </Viewbox>
+        <Viewbox Grid.Row="4" Grid.Column="1">
+            <Label Name="lblLowest"  Background="Aquamarine" />
+        </Viewbox>
+        <Viewbox Grid.Row="2" Grid.Column="2" >
+            <Button Name="btnAVG" Content="AVERAGE" Margin="5" Background="Gray" Click="btnAVG_Click" />
+        </Viewbox>
+        <Viewbox Grid.Row="3" Grid.Column="2" >
+            <Button Name="btnHigst" Content="HIGHEST" Margin="5" Background="Gray" Click="btnHigst_Click"/>
+        </Viewbox>
+        <Viewbox Grid.Row="4" Grid.Column="2" >
+            <Button Name="btnLwst" Content="LOWEST" Margin="5" Background="Gray" Click="btnLwst_Click"/>
+        </Viewbox>       
+
+    </Grid>
+</Window>
